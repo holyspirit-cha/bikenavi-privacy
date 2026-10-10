@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자전거 내비 개인정보처리방침 · Bike Navi Privacy Policy</title>
+<style>
+body{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222;background:#fff}
+h1{font-size:1.5em}h2{font-size:1.1em;margin-top:1.6em}
+table{border-collapse:collapse;width:100%;font-size:.95em}td,th{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}
+nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
+</style>
+</head>
+<body>
+<nav><a href="#ko">한국어</a> · <a href="#en">English</a></nav>
+
+<section id="ko">
+<h1>자전거 내비 개인정보처리방침</h1>
+<p>시행일: 2026년 10월 11일 · 앱 패키지: com.songdo.bikenavi · 개발자: 차상두(개인)</p>
+
+<h2>1. 앱이 하는 일</h2>
+<p>자전거 내비는 지도 위에 현재 위치를 표시하고, 사용자가 지도를 길게 눌러 고른 목적지까지의 자전거 경로를 보여 주는 앱입니다. 회원가입·로그인이 없습니다.</p>
+
+<h2>2. 처리하는 정보</h2>
+<table>
+<tr><th>정보</th><th>언제</th><th>어디로 가는가</th></tr>
+<tr><td>기기의 현재 위치(위도·경도)</td><td>앱을 켜고 위치 권한을 허용한 동안</td><td>지도에 표시하기 위해 기기 안에서만 씁니다. 경로를 요청할 때 출발점으로 아래 경로 서버에 보냅니다.</td></tr>
+<tr><td>출발점·목적지 좌표</td><td>사용자가 지도를 길게 눌러 경로를 요청할 때만</td><td>개발자가 운영하는 경로 계산 서버(Google Cloud Run, 서울 리전)로 HTTPS 로 전송합니다. 서버는 경로를 계산해 돌려줄 뿐 좌표를 계정이나 기기와 연결해 저장하지 않습니다.</td></tr>
+<tr><td>지도 타일 요청</td><td>지도를 볼 때</td><td>네이버 지도 SDK 가 네이버클라우드플랫폼에서 지도 이미지를 받아옵니다. 이 통신은 네이버의 약관·개인정보처리방침을 따릅니다.</td></tr>
+</table>
+
+<h2>3. 수집하지 않는 것</h2>
+<p>이름·이메일·전화번호·계정 정보를 받지 않습니다. 광고 SDK·분석(애널리틱스) 도구·광고 ID 를 쓰지 않습니다. 백그라운드 위치 권한을 요청하지 않으며, 앱이 화면에 있을 때만 위치를 사용합니다. 이동 기록을 저장하지 않습니다.</p>
+
+<h2>4. 서버 운영 기록</h2>
+<p>경로 서버(Google Cloud Run)는 운영을 위해 요청 시각·요청 주소(좌표 포함)·접속 IP 를 표준 요청 로그에 남기며, 이 로그는 최대 30일 뒤 자동 삭제됩니다. 로그는 장애 확인 외의 목적으로 쓰지 않으며 제3자에게 제공하지 않습니다.</p>
+
+<h2>5. 보관과 삭제</h2>
+<p>앱은 기기에 개인정보를 저장하지 않으므로 앱을 삭제하면 남는 것이 없습니다. 서버 로그는 4항과 같이 자동 삭제됩니다. 삭제 요청은 아래 연락처로 보내 주시면 처리합니다.</p>
+
+<h2>6. 아동</h2>
+<p>이 앱은 만 13세 미만 아동을 대상으로 하지 않습니다.</p>
+
+<h2>7. 변경</h2>
+<p>방침이 바뀌면 이 페이지를 갱신하고 시행일을 고칩니다.</p>
+
+<h2>8. 연락처</h2>
+<p>big7star@big7star.com</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Bike Navi Privacy Policy</h1>
+<p>Effective date: October 11, 2026 · Package: com.songdo.bikenavi · Developer: SangDoo Cha (individual)</p>
+
+<h2>1. What the app does</h2>
+<p>Bike Navi shows your current position on a map and draws a bicycle route to a destination you choose by long-pressing the map. There is no account or sign-in.</p>
+
+<h2>2. Information we handle</h2>
+<table>
+<tr><th>Information</th><th>When</th><th>Where it goes</th></tr>
+<tr><td>Device location (latitude, longitude)</td><td>While the app is open and you have granted location permission</td><td>Used on the device to show your position. When you request a route it is sent as the start point to the routing server below.</td></tr>
+<tr><td>Start and destination coordinates</td><td>Only when you long-press the map to request a route</td><td>Sent over HTTPS to a routing server operated by the developer (Google Cloud Run, Seoul region). The server computes the route and returns it; it does not store coordinates linked to an account or device.</td></tr>
+<tr><td>Map tile requests</td><td>While viewing the map</td><td>The Naver Map SDK fetches map images from Naver Cloud Platform under Naver's terms and privacy policy.</td></tr>
+</table>
+
+<h2>3. What we do not collect</h2>
+<p>No name, email, phone number or account data. No advertising SDK, no analytics, no advertising ID. No background location permission; location is used only while the app is on screen. No trip history is stored.</p>
+
+<h2>4. Server logs</h2>
+<p>The routing server (Google Cloud Run) keeps standard request logs (time, request URL including coordinates, client IP) for operations. They are deleted automatically after at most 30 days, used only for troubleshooting and never shared with third parties.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>The app stores no personal data on the device, so uninstalling leaves nothing behind. Server logs expire as described above. Deletion requests can be sent to the contact below.</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children under 13.</p>
+
+<h2>7. Changes</h2>
+<p>Changes will be posted on this page with an updated effective date.</p>
+
+<h2>8. Contact</h2>
+<p>big7star@big7star.com</p>
+</section>
+</body>
+</html>
