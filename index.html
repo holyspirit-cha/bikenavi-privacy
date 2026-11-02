@@ -16,7 +16,7 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 
 <section id="ko">
 <h1>자전거 내비 개인정보처리방침</h1>
-<p>시행일: 2026년 10월 27일 · 앱 패키지: com.songdo.bikenavi · 개발자: 차상두(개인)</p>
+<p>시행일: 2026년 11월 3일 · 앱 패키지: com.songdo.bikenavi · 개발자: 차상두(개인)</p>
 
 <h2>1. 앱이 하는 일</h2>
 <p>자전거 내비는 지도 위에 현재 위치를 표시하고, 사용자가 검색하거나 지도를 길게 눌러 고른 목적지까지의 자전거 경로(또는 뚜벅이 모드에서는 도보 경로)를 보여 주고, 다음 회전을 화면과 음성으로 안내하는 앱입니다. 회원가입·로그인이 없습니다. 무료 버전은 화면 상단에 배너 광고를 보여 주고, 앱을 처음 켤 때와 뚜벅이 모드를 쓰기 전에 전면 광고를 한 번 보여 줍니다. 일회성 인앱 구매(프리미엄)를 하면 광고가 사라지고 뚜벅이 모드가 항상 열립니다.</p>
@@ -27,7 +27,6 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 <tr><td>기기의 현재 위치(위도·경도)</td><td>앱을 켜고 위치 권한을 허용한 동안</td><td>지도에 표시하기 위해 기기 안에서만 씁니다. 경로를 요청할 때 출발점으로 아래 경로 서버에 보냅니다.</td></tr>
 <tr><td>출발점·목적지 좌표</td><td>사용자가 목적지를 고르고 경로를 요청할 때만</td><td>개발자가 운영하는 경로 계산 서버(Google Cloud Run, 서울 리전)로 HTTPS 로 전송합니다. 서버는 경로를 계산해 돌려줄 뿐 좌표를 계정이나 기기와 연결해 저장하지 않습니다.</td></tr>
 <tr><td>검색어와 현재 위치 좌표</td><td>검색창에 장소를 입력하고 검색을 누를 때만</td><td>카카오 로컬 API(dapi.kakao.com)에 HTTPS 로 보내 장소 목록을 받아옵니다. 현재 위치는 가까운 결과를 먼저 보여 주기 위해 함께 보냅니다. 이 통신은 카카오의 약관·개인정보처리방침을 따르며, 앱은 검색 기록을 서버에 남기지 않습니다.</td></tr>
-<tr><td>대략적인 위치(약 100 m 단위로 낮춘 위도·경도)와 무작위 익명 번호 — <b>「주변 이용자 표시」를 켠 경우에만</b></td><td>사용자가 👥 버튼으로 기능을 켜고 동의한 뒤, 앱 화면이 켜져 있는 동안 약 15초마다. 기본값은 꺼짐입니다.</td><td>개발자가 운영하는 중계 서버(Google Cloud Run, 서울 리전)로 HTTPS 로 보냅니다. 서버는 같은 기능을 켠 반경 5 km 안 다른 이용자에게 이 대략적인 위치를 지도 위 점으로 보여 줍니다. 익명 번호는 앱이 무작위로 만든 값으로 이름·전화번호·광고 ID·기기 정보와 연결되지 않습니다. 서버는 위치를 디스크나 데이터베이스에 저장하지 않고 메모리에만 두며, 마지막 전송 후 2분이 지나거나 기능을 끄면 즉시 지웁니다. 이동 경로를 쌓아 두지 않습니다.</td></tr>
 <tr><td>최근 목적지(이름·주소·좌표, 최대 20건)</td><td>경로를 요청할 때</td><td>기기 안(앱 저장 공간)에만 저장하며 어디에도 전송하지 않습니다. 앱을 삭제하면 함께 지워집니다.</td></tr>
 <tr><td>음성 안내 문구</td><td>안내 중</td><td>기기에 설치된 음성 합성(TTS) 엔진이 기기 안에서 읽어 줍니다. 앱이 음성 데이터를 수집하거나 전송하지 않습니다.</td></tr>
 <tr><td>광고 ID 와 광고 요청 정보(기기 종류·OS 버전·앱 패키지명·대략적 위치는 Google 이 IP 로 추정)</td><td>무료 버전에서 광고가 표시될 때</td><td>Google AdMob SDK 가 광고를 받아오기 위해 Google 에 보냅니다. 이 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따르며, 기기 설정에서 광고 ID 를 재설정하거나 맞춤 광고를 끌 수 있습니다. 개발자는 광고 ID 를 받거나 저장하지 않습니다.</td></tr>
@@ -36,10 +35,10 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 </table>
 
 <h2>3. 수집하지 않는 것</h2>
-<p>이름·이메일·전화번호·계정 정보를 받지 않습니다. 분석(애널리틱스)·오류 보고 도구를 쓰지 않습니다. 광고는 Google AdMob 만 쓰며 2항에 적은 정보 외에는 수집하지 않습니다. 백그라운드 위치 권한을 요청하지 않으며, 앱이 화면에 있을 때만 위치를 사용합니다. 이동 기록을 저장하지 않습니다. 「주변 이용자 표시」는 사용자가 켠 경우에만 동작하며 언제든 👥 버튼으로 끌 수 있습니다.</p>
+<p>이름·이메일·전화번호·계정 정보를 받지 않습니다. 분석(애널리틱스)·오류 보고 도구를 쓰지 않습니다. 광고는 Google AdMob 만 쓰며 2항에 적은 정보 외에는 수집하지 않습니다. 백그라운드 위치 권한을 요청하지 않으며, 앱이 화면에 있을 때만 위치를 사용합니다. 이동 기록을 저장하지 않습니다.</p>
 
 <h2>4. 서버 운영 기록</h2>
-<p>경로 서버(Google Cloud Run)는 운영을 위해 요청 시각·요청 주소(좌표 포함)·접속 IP 를 표준 요청 로그에 남기며, 이 로그는 최대 30일 뒤 자동 삭제됩니다. 주변 이용자 중계 서버는 위치를 요청 본문으로만 받으므로 요청 로그에 좌표가 남지 않으며(요청 시각·주소·IP 만 남음), 서버 프로그램도 접속 기록을 남기지 않습니다. 로그는 장애 확인 외의 목적으로 쓰지 않으며 제3자에게 제공하지 않습니다.</p>
+<p>경로 서버(Google Cloud Run)는 운영을 위해 요청 시각·요청 주소(좌표 포함)·접속 IP 를 표준 요청 로그에 남기며, 이 로그는 최대 30일 뒤 자동 삭제됩니다. 로그는 장애 확인 외의 목적으로 쓰지 않으며 제3자에게 제공하지 않습니다.</p>
 
 <h2>5. 보관과 삭제</h2>
 <p>앱이 기기에 저장하는 것은 최근 목적지 목록뿐이며 앱을 삭제하면 함께 지워집니다. 서버 로그는 4항과 같이 자동 삭제됩니다. 삭제 요청은 아래 연락처로 보내 주시면 처리합니다.</p>
@@ -58,7 +57,7 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 
 <section id="en" lang="en">
 <h1>Bike Navi Privacy Policy</h1>
-<p>Effective date: October 27, 2026 · Package: com.songdo.bikenavi · Developer: SangDoo Cha (individual)</p>
+<p>Effective date: November 3, 2026 · Package: com.songdo.bikenavi · Developer: SangDoo Cha (individual)</p>
 
 <h2>1. What the app does</h2>
 <p>Bike Navi shows your current position on a map and draws a bicycle route to a destination you choose by searching or long-pressing the map (or a walking route in Walk mode), and gives turn-by-turn guidance on screen and by voice. There is no account or sign-in. The free version shows a banner ad at the top of the screen and one interstitial ad at cold start and before using Walk mode. A one-time in-app purchase (Premium) removes the ads and keeps Walk mode unlocked.</p>
@@ -69,7 +68,6 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 <tr><td>Device location (latitude, longitude)</td><td>While the app is open and you have granted location permission</td><td>Used on the device to show your position. When you request a route it is sent as the start point to the routing server below.</td></tr>
 <tr><td>Start and destination coordinates</td><td>Only when you choose a destination and request a route</td><td>Sent over HTTPS to a routing server operated by the developer (Google Cloud Run, Seoul region). The server computes the route and returns it; it does not store coordinates linked to an account or device.</td></tr>
 <tr><td>Search text and current location</td><td>Only when you type a place in the search box and press search</td><td>Sent over HTTPS to the Kakao Local API (dapi.kakao.com) to get a list of places. Your current location is included so nearby results come first. This traffic is governed by Kakao's terms and privacy policy; the app keeps no search history on any server.</td></tr>
-<tr><td>Approximate location (latitude/longitude reduced to about 100 m) and a random anonymous ID — <b>only if you turn on "Nearby riders"</b></td><td>After you turn the feature on with the 👥 button and agree, about every 15 seconds while the app is on screen. It is off by default.</td><td>Sent over HTTPS to a relay server operated by the developer (Google Cloud Run, Seoul region). The server shows this approximate location as a dot on the map to other users within 5 km who have also turned the feature on. The anonymous ID is generated randomly by the app and is not linked to any name, phone number, advertising ID or device information. The server keeps locations in memory only, never on disk or in a database, and deletes them 2 minutes after the last update or immediately when you turn the feature off. No trip history is built.</td></tr>
 <tr><td>Recent destinations (name, address, coordinates, up to 20)</td><td>When you request a route</td><td>Stored only on the device in the app's private storage and never transmitted. Removed when the app is uninstalled.</td></tr>
 <tr><td>Voice guidance text</td><td>During navigation</td><td>Spoken on the device by the installed text-to-speech engine. The app does not collect or transmit any audio.</td></tr>
 <tr><td>Advertising ID and ad request data (device type, OS version, app package name, coarse location estimated by Google from IP)</td><td>When an ad is shown in the free version</td><td>Sent to Google by the Google AdMob SDK to serve ads, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can reset the advertising ID or opt out of personalised ads in device settings. The developer does not receive or store the advertising ID.</td></tr>
@@ -78,10 +76,10 @@ nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 </table>
 
 <h2>3. What we do not collect</h2>
-<p>No name, email, phone number or account data. No analytics or crash-reporting tools. The only advertising SDK is Google AdMob, which collects nothing beyond what is listed in section 2. No background location permission; location is used only while the app is on screen. No trip history is stored. "Nearby riders" works only if you turn it on, and you can turn it off at any time with the 👥 button.</p>
+<p>No name, email, phone number or account data. No analytics or crash-reporting tools. The only advertising SDK is Google AdMob, which collects nothing beyond what is listed in section 2. No background location permission; location is used only while the app is on screen. No trip history is stored.</p>
 
 <h2>4. Server logs</h2>
-<p>The routing server (Google Cloud Run) keeps standard request logs (time, request URL including coordinates, client IP) for operations. They are deleted automatically after at most 30 days, used only for troubleshooting and never shared with third parties. The nearby-riders relay receives locations only in the request body, so its request logs contain no coordinates (only time, URL and IP), and the server program itself keeps no access log.</p>
+<p>The routing server (Google Cloud Run) keeps standard request logs (time, request URL including coordinates, client IP) for operations. They are deleted automatically after at most 30 days, used only for troubleshooting and never shared with third parties.</p>
 
 <h2>5. Retention and deletion</h2>
 <p>The only data the app keeps on the device is the recent-destination list, which is removed when the app is uninstalled. Server logs expire as described above. Deletion requests can be sent to the contact below.</p>
